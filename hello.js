@@ -7,7 +7,7 @@
 var http = require('http');
 var fs = require('fs');
 
-http.createServer(function (request, response) { // request event
+var server = http.createServer(function (request, response) { // request event
     response.writeHead(200, {'Content-Type': 'text/plain'}); // Sends a response header to the request. The status code is a 3-digit HTTP status code, like 404.
     response.write('Dog is running');
 
